@@ -1,0 +1,140 @@
+/* scss work */
+
+$color: #FFFFE0;
+
+$photoborder: 10px solid #fff;
+
+table {
+   th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: 10px;
+}
+ td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+   margin: 10px;
+ }
+}
+
+%message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+/* css coding */
+body {
+  background-color: $color;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #4863A0;
+  }
+  p {
+    color: #A18648;
+  }
+}
+
+/* nav bar css from bootstrap */
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* index page */
+
+
+.container {
+  margin: 150px;
+}
+.message {
+  @extend %message-shared !optional;
+  margin: 150px;
+}
+
+.gridImage {
+  height: 350px;
+  width: 350px;
+  border: $photoborder;
+
+}
+
+
+/* About Me page */
+
+.melon {
+  margin: 20px 0px 0px 0px;
+  height: 400px;
+  width: 350px;
+  border-radius: 50%;
+  float: left;
+  shape-outside:ellipse();
+  padding: 10px;
+}
+
+.aboutme {
+  margin: 100px 0px 5px 0px;
+
+}
+
+/* style for lists and tables on Facts page */
+
+
+.lists {
+  display: flex;
+  margin: 100px;
+}
+
+table {
+  margin: 10px;
+}
+
+/* style for contact page */
+
+
+
+#contact {
+  margin: 150px;
+  height: 500px;
+  width: 50%;
+   font-family: -apple-system, Arial, sans-serif;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   text-align: left;
+   background-color: #fff;
+   padding: 20px;
+   padding-bottom: 10px;
+   border: 1px solid #ced4da;
+   border-radius: 0.25rem;
+   display:inline-grid;
+
+}
+
+#contact > label {
+  margin-top: 25px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#comment {
+  height: 150px;
+}
